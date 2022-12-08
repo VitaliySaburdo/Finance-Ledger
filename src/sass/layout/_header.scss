@@ -3,3 +3,28 @@
   | Header
   |============================
 */
+
+.header {
+  height: 112px;
+}
+.header__logo--txt1 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--accent-txt);
+}
+.header__logo--txt2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--prymary-txt);
+}
+.header__logo__link {
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+.header__nav--list {
+  display: flex;
+  gap: 14px;
+}
