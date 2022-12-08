@@ -1,1 +1,13 @@
-// @import './common';
+// Base styles
+@import './base/body-settings';
+@import './base/reset-styles';
+
+// Components
+@import './components/container-setting';
+
+// layout
+@import './layout/header';
+
+// Utils
+@import './utils/variables';
+@import './utils/visualy-hiden';

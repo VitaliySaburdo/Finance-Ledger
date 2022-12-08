@@ -1,9 +1,9 @@
 /* Base styles */
 
-// body {
-//   background-color: ;
-//   color: ;
-//   font-family: ;
-//   font-size: ;
-//   letter-spacing: normal;
-// }
+body {
+  background-color: #000000;
+  color: var(--prymary-txt);
+  font-family: var(--primary-font);
+  font-size: 18px;
+  letter-spacing: normal;
+}
