@@ -6,25 +6,76 @@
 
 .header {
   height: 112px;
+  @media screen and (min-width: 768px) {
+    height: 70px;
+  }
+}
+.header__menu {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header__logo--txt1 {
+  margin-left: 6px;
   font-weight: 400;
   font-size: 32px;
   line-height: 42px;
   color: var(--accent-txt);
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+    margin-left: 10px;
+  }
 }
 .header__logo--txt2 {
   font-weight: 400;
   font-size: 32px;
   line-height: 42px;
   color: var(--prymary-txt);
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+  }
 }
 .header__logo__link {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
   margin-top: 21px;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 11px;
+    margin-right: 65px;
+    margin-left: 41px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-right: 557px;
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+}
+.header__nav--link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-top: 21px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .header__nav--list {
   display: flex;
   gap: 14px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    gap: 18px;
+  }
+  @media screen and (min-width: 1360px) {
+    gap: 38px;
+  }
 }
