@@ -9,6 +9,35 @@
   padding-bottom: 31px;
   padding-left: 52px;
   padding-right: 48px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 31px;
+    padding-left: 55px;
+    padding-right: 47px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-bottom: 19px;
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+}
+.about__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+  }
+  @media screen and (min-width: 1360px) {
+    gap: 71px;
+  }
+}
+.about__item {
+  @media screen and (min-width: 768px) {
+    width: 185px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 362px;
+  }
 }
 .about__shell {
   display: flex;
