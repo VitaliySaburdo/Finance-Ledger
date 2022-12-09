@@ -1,0 +1,109 @@
+/**
+  |============================
+  | Hero
+  |============================
+*/
+
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/Hero/Rectangle@1x-sm.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Hero/Rectangle@2x-sm.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../images/Hero/Rectangle@1x-md.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/Hero/Rectangle@2x-md.jpg);
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../images/Hero/Rectangle@1x-lg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/Hero/Rectangle@2x-lg.jpg);
+    }
+  }
+}
+.hero__container {
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-bottom: 95px;
+  padding-top: 139px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 412px;
+    padding-top: 407px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-bottom: 284px;
+    padding-top: 297px;
+  }
+}
+.hero__title {
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: calc(66 / 52);
+  text-align: center;
+  color: var(--secondary-txt);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+.hero__txt {
+  margin-bottom: 27px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: calc(37 / 22);
+  text-align: center;
+  color: var(--secondary-txt);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 29px;
+  }
+}
+
+.hero_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 156px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--prymary-txt);
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: var(--accent-bcg);
+  margin: 0 auto;
+}
