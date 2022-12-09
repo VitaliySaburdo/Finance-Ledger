@@ -10,14 +10,14 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../images/Hero/Rectangle@1x-sm.jpg);
+    url(../images/Hero/Rectangle@1x-sm.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/Hero/Rectangle@2x-sm.jpg);
+    background-image: url(../images/Hero/Rectangle@2x-sm.webp);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -25,14 +25,14 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url(../images/Hero/Rectangle@1x-md.jpg);
+      url(../images/Hero/Rectangle@1x-md.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/Hero/Rectangle@2x-md.jpg);
+      background-image: url(../images/Hero/Rectangle@2x-md.webp);
     }
   }
   @media screen and (min-width: 1360px) {
@@ -41,14 +41,14 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url(../images/Hero/Rectangle@1x-lg.jpg);
+      url(../images/Hero/Rectangle@1x-lg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/Hero/Rectangle@2x-lg.jpg);
+      background-image: url(../images/Hero/Rectangle@2x-lg.webp);
     }
   }
 }
