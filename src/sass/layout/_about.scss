@@ -1,0 +1,45 @@
+/**
+  |============================
+  | About
+  |============================
+*/
+
+.about__container {
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 52px;
+  padding-right: 48px;
+}
+.about__shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 11px;
+  border-radius: 50%;
+  background-color: var(--accent-bcg);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.about__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  text-align: center;
+  color: var(--content-txt);
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.about__txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--content-txt);
+  margin-bottom: 15px;
+}
