@@ -1,6 +1,5 @@
 <section class="about container" id="about">
   <div class="about__container">
-    <h2 class="visually-hidden"></h2>
     <ul class="about__list list">
       <li class="about__item">
         <div class="about__shell">
@@ -38,9 +37,36 @@
           necessitatibus!
         </p>
       </li>
-
-      <div class="about__box--left"></div>
-      <div class="about__box--right"></div>
     </ul>
+  </div>
+  <div class="about__box">
+    <img
+      class="about__img"
+      srcset="
+        ./images/About/Rectangle-320.webp   320w,
+        ./images/About/Rectangle-384.webp   384w,
+        ./images/About/Rectangle-640.webp   640w,
+        ./images/About/Rectangle-640.webp   680w,
+        ./images/About/Rectangle-768.webp   768w,
+        ./images/About/Rectangle-1360.webp 1360w
+      "
+      src="./images/About/Rectangle-320.webp"
+      alt="Team"
+      sizes="(min-width: 1360px) 680px, (min-width: 768px) 384px, 100vw"
+      width="680"
+      height="460"
+    />
+
+    <div class="about__aside">
+      <h3 class="about__subject">What you are looking for</h3>
+      <h2 class="about__caption">We provide bespoke solutions</h2>
+      <p class="about__desc">
+        Lorem ipsum dolor, sit amet consectetur padipisicing elit. Voluptate,
+        ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
+        illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
+        maiores deleniti?
+      </p>
+      <button class="about_btn">Read More</button>
+    </div>
   </div>
 </section>
