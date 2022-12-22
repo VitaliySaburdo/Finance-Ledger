@@ -1,0 +1,87 @@
+/**
+  |============================
+  | Mixins
+  |============================
+*/
+
+// Шрифты
+@mixin fonts($fw, $fs, $lh, $ls: 1.3) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh/$fs);
+  letter-spacing: $ls;
+}
+// Анимация
+@mixin transition($property) {
+  $duration: 250ms;
+  $timing-function: ease;
+
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
+// Card-set
+@mixin card-set($card-gap: 20px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $card-gap;
+}
+
+@mixin card-item($card-item: 1, $card-gap: 20px) {
+  flex-basis: calc((100% - #{$card-gap} * (#{$card-item} - 1)) / #{$card-item});
+}
+
+// Секция
+@mixin section($pt: 60px, $pb: 60px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+// Flex-center
+@mixin centered-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Адаптивные дисплеи
+@mixin mq($range) {
+  $mob: 480px;
+  $tab: 768px;
+  $desk: 1280px;
+
+  @if $range==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $range==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $range==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $range==noDesk {
+    @media (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $range==tab-only {
+    @media (min-width:$tab) and (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $range==mob-only {
+    @media (max-width:#{$tab - 0.02}) {
+      @content;
+    }
+  }
+}

@@ -22,9 +22,7 @@
 }
 .header__logo--txt1 {
   margin-left: 6px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: calc(42 / 32);
+  @include fonts(400, 32px, 42px);
   color: var(--accent-txt);
   @media screen and (min-width: 768px) {
     font-size: 35px;
@@ -32,9 +30,8 @@
   }
 }
 .header__logo--txt2 {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: calc(42 / 32);
+  @include fonts(400, 32px, 42px);
+
   color: var(--prymary-txt);
   @media screen and (min-width: 768px) {
     font-size: 35px;

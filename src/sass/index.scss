@@ -1,3 +1,8 @@
+// Utils
+@import './utils/variables';
+@import './utils/visualy-hiden';
+@import './utils/mixins';
+
 // Base styles
 @import './base/body-settings';
 @import './base/reset-styles';
@@ -10,7 +15,3 @@
 @import './layout/hero';
 @import './layout/about';
 @import './layout/cases';
-
-// Utils
-@import './utils/variables';
-@import './utils/visualy-hiden';
