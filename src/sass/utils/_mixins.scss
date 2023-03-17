@@ -5,11 +5,10 @@
 */
 
 // Шрифты
-@mixin fonts($fw, $fs, $lh, $ls: 1.3) {
+@mixin fonts($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
   line-height: calc($lh/$fs);
-  letter-spacing: $ls;
 }
 // Анимация
 @mixin transition($property) {

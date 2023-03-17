@@ -1,0 +1,31 @@
+/**
+  |============================
+  | Cases
+  |============================
+*/
+.cases {
+  @include section(50, 50);
+}
+.cases__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.cases__subject {
+  @include fonts(400, 18, 30);
+  text-align: center;
+  color: var(--content-txt);
+  margin-bottom: 15px;
+}
+.cases__title {
+  @include fonts(300, 38, 48);
+  text-align: center;
+  color: var(--content-txt);
+  margin-bottom: 35px;
+}
+
+.cases__txt {
+  @include fonts(400, 16, 26);
+  text-align: center;
+  color: var(--content-txt);
+  margin-bottom: 37px;
+}
