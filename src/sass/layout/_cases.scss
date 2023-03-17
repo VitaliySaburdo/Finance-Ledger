@@ -29,3 +29,10 @@
   color: var(--content-txt);
   margin-bottom: 37px;
 }
+
+.cases__img {
+  margin-bottom: 7px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
