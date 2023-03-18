@@ -3,15 +3,18 @@
   | Cases
   |============================
 */
-.cases {
+.cases,
+.team {
   @include section(50, 50);
 }
-.cases__container {
+.cases__container,
+.team__container {
   padding-left: 28px;
   padding-right: 28px;
   @include mq(tab);
 }
-.cases__subject {
+.cases__subject,
+.team__subject {
   @include fonts(400, 18, 30);
   text-align: center;
   color: var(--content-txt);
@@ -20,14 +23,16 @@
     @include fonts(400, 20, 33);
   }
 }
-.cases__title {
+.cases__title,
+.team__title {
   @include fonts(300, 38, 48);
   text-align: center;
   color: var(--content-txt);
   margin-bottom: 35px;
 }
 
-.cases__txt {
+.cases__txt,
+.team__txt {
   @include fonts(400, 16, 26);
   text-align: center;
   color: var(--content-txt);
@@ -37,7 +42,8 @@
   }
 }
 
-.cases__List {
+.cases__list,
+.team__list {
   @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
