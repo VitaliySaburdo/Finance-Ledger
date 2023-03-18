@@ -13,20 +13,18 @@
 }
 .blog__container {
   padding: 30px;
-}
-.blog__img {
   @include mq(desk) {
-    display: inline-block;
+    padding: 0;
   }
 }
+
 .blog__box {
   @include mq(tab) {
-    width: 384px;
+    width: 315px;
   }
   @include mq(desk) {
     width: 680px;
+    padding-top: 112px;
+    padding-left: 30px;
   }
-}
-.blog__box > .txt {
-  width: 315px;
 }
