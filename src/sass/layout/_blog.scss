@@ -6,6 +6,10 @@
 
 .blog {
   background-color: var(--blog-bgc);
+  @include mq(tab) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .blog__container {
   padding: 30px;
@@ -14,4 +18,15 @@
   @include mq(desk) {
     display: inline-block;
   }
+}
+.blog__box {
+  @include mq(tab) {
+    width: 384px;
+  }
+  @include mq(desk) {
+    width: 680px;
+  }
+}
+.blog__box > .txt {
+  width: 315px;
 }
