@@ -1,0 +1,17 @@
+/**
+  |============================
+  | Blog
+  |============================
+*/
+
+.blog {
+  background-color: var(--blog-bgc);
+}
+.blog__container {
+  padding: 30px;
+}
+.blog__img {
+  @include mq(desk) {
+    display: inline-block;
+  }
+}

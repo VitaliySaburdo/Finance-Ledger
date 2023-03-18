@@ -9,12 +9,16 @@
 .cases__container {
   padding-left: 28px;
   padding-right: 28px;
+  @include mq(tab);
 }
 .cases__subject {
   @include fonts(400, 18, 30);
   text-align: center;
   color: var(--content-txt);
   margin-bottom: 15px;
+  @include mq(tab) {
+    @include fonts(400, 20, 33);
+  }
 }
 .cases__title {
   @include fonts(300, 38, 48);
@@ -28,11 +32,26 @@
   text-align: center;
   color: var(--content-txt);
   margin-bottom: 37px;
+  @include mq(tab) {
+    @include fonts(400, 18, 28);
+  }
 }
 
-.cases__img {
+.cases__List {
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    column-gap: 8px;
+  }
+}
+
+.cases__item {
   margin-bottom: 7px;
   &:last-child {
+    margin-bottom: 0;
+  }
+  @include mq(tab) {
     margin-bottom: 0;
   }
 }

@@ -44,9 +44,9 @@
 
 // Адаптивные дисплеи
 @mixin mq($range) {
-  $mob: 480px;
+  $mob: 320px;
   $tab: 768px;
-  $desk: 1280px;
+  $desk: 1360px;
 
   @if $range==mob {
     @media screen and (min-width: $mob) {
