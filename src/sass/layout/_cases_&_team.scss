@@ -82,9 +82,27 @@
   position: relative;
   overflow: hidden;
 }
+.icon {
+  fill: #fff;
+  transition-property: fill;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: rgb(214, 214, 214);
+  }
+}
 
+.team__items {
+  width: 216px;
+  height: 35px;
+  display: flex;
+  gap: 25px;
+}
 .team__overlay {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
