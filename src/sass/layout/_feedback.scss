@@ -75,4 +75,9 @@ input[name='email'] {
   background-color: #28a745;
   color: #ffffff;
   border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+  @include mq(tab) {
+    margin-bottom: 0;
+  }
 }
