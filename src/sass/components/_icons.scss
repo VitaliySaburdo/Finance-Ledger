@@ -1,0 +1,15 @@
+/**
+  |============================
+  | Icons
+  |============================
+*/
+
+.icon {
+  fill: #fff;
+  transition-property: fill;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: rgb(214, 214, 214);
+  }
+}
