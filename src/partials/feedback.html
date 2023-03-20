@@ -1,32 +1,59 @@
 <section class="feedback container" id="about">
-  <picture>
-    <!-- desk -->
-    <source
-      media="(min-width: 1360px)"
-      srcset="
-        ./images/Team/team_desk_01@1x.webp 1x,
-        ./images/Team/team_desk_01@2x.webp 2x
-      "
-      type="image/webp"
-    />
-    <!-- tablet -->
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ./images/Team/team_tab_01@1x.webp 1x,
-        ./images/Team/team_tab_01@2x.webp 2x
-      "
-      type="image/webp"
-    />
-    <!-- mobil -->
-    <source
-      media="(max-width: 767px)"
-      srcset="
-        ./images/Team/team_mob_01@1x.webp 1x,
-        ./images/Team/team_mob_01@2x.webp 2x
-      "
-      type="image/webp"
-    />
-    <img src="./images/Team/team_desk_01@1x.webp" alt="team" />
-  </picture>
+  <div class="feedback__container">
+    <picture>
+      <!-- desk -->
+      <source
+        media="(min-width: 1360px)"
+        srcset="
+          ./images/Feedback/Feedback_desk@1x.webp 1x,
+          ./images/Feedback/Feedback_desk@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/Feedback/Feedback_tab@1x.webp 1x,
+          ./images/Feedback/Feedback_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- mobil -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/Feedback/Feedback_mob@1x.webp 1x,
+          ./images/Feedback/Feedback_mob@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <img src="./images/Feedback/Feedback_desk@1x.webp" alt="team" />
+    </picture>
+    <div class="feedback__box">
+      <h2 class="feedback__title">Request Callback</h2>
+      <form action="" class="feedback__form">
+        <label for="name">
+          <input
+            class="feedback__input"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+        <label for="email">
+          <input
+            class="feedback__input"
+            type="text"
+            name="email"
+            placeholder="Enter email*"
+            required
+          />
+        </label>
+
+        <button class="feedback__btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </section>
